@@ -2,3 +2,140 @@
 @import "global";
 @import "fonts";
 
+// start header
+
+.header__top {
+    background-color: $bg;   
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    min-height: 100px;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-img{
+        width: 50px;
+        height: 50px;
+    }
+    &-text {
+        font-family: "Quicksand-Bold", sans-serif;   
+        color: #0674ec;
+        font-size: 30px;
+        font-weight: bold;
+        
+        span {
+            color: #000000;
+        }
+    }
+    &-seller {
+        font-size: 14px;
+        font-weight: 400;
+        margin-left: auto;
+        margin-right: 50px; 
+        padding: 12px 20px;
+        background-color: $blue;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 25px;
+        a {
+           color: #ffffff; 
+        }
+    }
+
+
+    &-user {
+       display: flex;
+       justify-content: space-between;
+        align-items: center;
+    }
+
+    &-avatar {
+        width: 50px;
+        height: 50px;   
+    }
+
+    &-author {
+        margin-left: 20px;
+     }
+
+     &-nickname {
+         display: block;
+     }
+    
+
+    &-balance {
+        display: block;
+        color: $blue;
+        margin-right: auto;
+       
+    }
+ 
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+
+    &-list { 
+
+        a {
+            font-size: 15px;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        li {
+            display: inline-block;
+            &+li {
+                margin-left: 35px;
+            }   
+        }
+        }
+    
+
+    &-search {
+   
+    
+        form {
+            margin-left: auto;
+            position: relative;
+    }
+        button {
+            width: 70px;
+            height: 45px;
+            background-color: $blue;
+            border: none;
+            border-radius: 25px;
+            outline: none;
+            position: absolute;
+            right: 0px;
+
+    }
+        input {
+            border: 1px solid $border;
+            border-radius: 25px;
+            width: 360px;
+            height: 45px;
+            padding-left: 25px;
+            padding-right: 70px;
+            outline: none;
+            cursor: pointer;
+            &:focus {
+            border: 1px solid $blue;
+        }
+}
+    }
+}
+
+// start header
+
+
+
