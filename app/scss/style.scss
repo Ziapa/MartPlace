@@ -382,6 +382,44 @@
     }
 }
 
+.slick-arrow {
+    font-size: 0;
+    color: #ffffff;
+    content: "";
+    background-color: $purple;
+    width: 55px;
+    height: 45px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
+.slick-prev {
+    border-radius: 25px 0 0 25px;
+    background-image: url(../images/arrow-left.png);
+    position: absolute;
+    top: -85px;
+    right: 85px;
+
+}
+
+.slick-next {
+    border-radius:0 25px 25px 0  ;
+    background-image: url(../images/arrow-right.png);
+    position: absolute;
+    top: -85px;
+    right: 30px;
+    
+}
+
+
+//end section weekly featured
+
+//start Newest Release Products
+
+
+  
+
 
 
 
