@@ -309,6 +309,17 @@
 .slider-info {
     background-color: #ffffff;
     padding:0 50px;
+    position: relative;
+    right: 0;
+    padding-left: 605px;
+    &::before {
+        position: absolute;
+        content: url(../images/slider-bg.png);
+        width: 555px;
+        height: 455px;
+        left: 0;
+
+    }
     &__title {
         padding-top: 40px;
         font-size: 24px;
@@ -371,18 +382,6 @@
     }
 }
 
-.slick-arrow {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #81e4ed;
-}
-
-.slick-next {
-    top: 0;
-}
 
 
 
-
- 
