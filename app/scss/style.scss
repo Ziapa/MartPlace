@@ -379,6 +379,39 @@
     &__botton {
         border-top: 1px solid $border;
         padding: 20px 0;
+        font-size: 15px;
+        font-weight: medium;
+        &-price {
+            background-color: $blue;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 25px;
+        }
+        &-like {
+            margin-left: 45px;
+            color: #555555;
+            position: relative;
+            &::before {
+                content: url(../images/icons/heart-like.png);   
+                position: absolute;
+                left: -23px;           
+            }
+
+        }
+        &-basket {
+            margin-left: 40px;
+            color: $blue;
+            position: relative;
+            &::before {
+                content: url(../images/icons/basker-cart.png);
+                position: absolute;
+                left: -23px;
+            }
+        }
+        &-stars {
+            position: absolute;
+            right: 50px;
+        }
     }
 }
 
@@ -392,6 +425,9 @@
     background-repeat: no-repeat;
     background-position: center;
     border: none;
+    &:hover {
+        opacity: 0.9;        
+    }
 }
 
 .slick-prev {
